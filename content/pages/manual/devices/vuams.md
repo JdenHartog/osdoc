@@ -32,13 +32,11 @@ figure:
 
 ## Setting the device name
 
-By default, the plugin tries to autodetect your SR Box. If this works, you don't have to change it. If your experiment freezes, OpenSesame has chosen the wrong serial port and you must enter the device name manually. Under Windows, the device is probably called something like
+By default, the plugin tries to autodetect the VU-AMS. If this works, you don't have to change it. If your experiment stops, OpenSesame can't automatically detect the port and you must enter the device name manually. Under Windows, the device is called something like
 
-	COM4
+	COM3
 
-Under Linux the device is probably called something like
-
-	/dev/tty0
+Note that entering a device name manually makes your experiment start a bit faster because than the plugin doesn't have to sequentially  try all ports.
 
 ## Requirements
 
