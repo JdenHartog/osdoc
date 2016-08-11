@@ -1,6 +1,9 @@
 title: Ambulatory Monitoring System (VU-AMS)
 
-The VU University Ambulatory Monitoring System (VU-AMS) is a device that can be used to measure a variety of factors related to heart rate, respiration, and body movement. The developers offer an OpenSesame template on their website.
+The VU University Ambulatory Monitoring System (VU-AMS) is a device that can be used to measure a variety of factors related to heart rate, respiration, and body movement. The developers made an OpenSesame [plugin](https://github.com/JdenHartog/vu_ams).
+
+- <http://www.vu-ams.nl/>
+
 
 [TOC]
 
@@ -76,8 +79,6 @@ if button == 1:
         print('Button 1 was pressed in %d ms!' % response_time)
 srbox.stop()
 ~~~
-
-<div class="FunctionDoc YAMLDoc" id="srbox-__init__" markdown="1">
 
 ## [function __srbox\.\_\_init\_\___\(experiment, dev=None\)](#function-__srbox__init____experiment-devnone) {#function-__srbox__init____experiment-devnone}
 
