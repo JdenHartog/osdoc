@@ -40,9 +40,9 @@ Note that entering a device name manually makes your experiment start a bit fast
 
 ## Requirements
 
-An SR Box or compatible button box. Not all button boxes are compatible, see:
+A VU-AMS device see:
 
-- %link:buttonbox%
+- <http://www.vu-ams.nl/>
 
 ## Using the SR Box from Python inline code
 
