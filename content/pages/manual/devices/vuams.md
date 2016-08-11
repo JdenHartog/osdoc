@@ -44,7 +44,7 @@ A VU-AMS device see:
 
 - <http://www.vu-ams.nl/>
 
-## Using the SR Box from Python inline code
+## Using the vu-ams from Python inline code
 
 # class __AMS__
 
