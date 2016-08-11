@@ -64,15 +64,7 @@ object and can be accessed within an inline_script item as `var.AMS
 
 __Function list:__
 
-
-- [function __srbox\.\_\_init\_\___\(experiment, dev=None\)](#function-__srbox__init____experiment-devnone)
-- [function __srbox\.close__\(\)](#function-__srboxclose__)
-- [function __srbox\.get\_button\_press__\(allowed\_buttons=None, timeout=None, require\_state\_change=False\)](#function-__srboxget_button_press__allowed_buttonsnone-timeoutnone-require_state_changefalse)
-- [function __srbox\.send__\(ch\)](#function-__srboxsend__ch)
-- [function __srbox\.start__\(\)](#function-__srboxstart__)
-- [function __srbox\.stop__\(\)](#function-__srboxstop__)
-
-
+- [function __AMS\.SendCodedMarker__\(int\)](#function-__AMSSendCodedMarker__int)
 
 __Example:__
 
@@ -87,118 +79,20 @@ if button == 1:
 srbox.stop()
 ~~~
 
-## [function __srbox\.\_\_init\_\___\(experiment, dev=None\)](#function-__srbox__init____experiment-devnone) {#function-__srbox__init____experiment-devnone}
-
-Constructor. An `srbox` object is created automatically by the `srbox` plug-in, and you do not generally need to call the constructor yourself.
-
-__Arguments:__
-
-- `experiment` -- An Opensesame experiment.
-	- Type: experiment
-
-__Keywords:__
-
-- `dev` -- No description
-	- Default: None
-
-</div>
-
-[srbox.__init__]: #srbox-__init__
-[__init__]: #srbox-__init__
-
-<div class="FunctionDoc YAMLDoc" id="srbox-close" markdown="1">
-
-## [function __srbox\.close__\(\)](#function-__srboxclose__) {#function-__srboxclose__}
-
-Closes the connection to the srbox. This is done automatically by the `srbox` plugin when the experiment finishes.
-
-</div>
-
-[srbox.close]: #srbox-close
-[close]: #srbox-close
-
-<div class="FunctionDoc YAMLDoc" id="srbox-get_button_press" markdown="1">
-
-## [function __srbox\.get\_button\_press__\(allowed\_buttons=None, timeout=None, require\_state\_change=False\)](#function-__srboxget_button_press__allowed_buttonsnone-timeoutnone-require_state_changefalse) {#function-__srboxget_button_press__allowed_buttonsnone-timeoutnone-require_state_changefalse}
-
-Collects a button press from the SR box.
-
-__Keywords:__
-
-- `allowed_buttons` -- A list of buttons that are accepted or `None` to accept all buttons. Valid buttons are integers 1 through 8.
-	- Type: list, NoneType
-	- Default: None
-- `timeout` -- A timeout value in milliseconds or `None` for no timeout.
-	- Type: int, float, NoneType
-	- Default: None
-- `require_state_change` -- Indicates whether already pressed button should be accepted (False), or whether only a state change from unpressed to pressed is accepted (True).
-	- Default: False
-
-__Returns:__
-
-A button_list, timestamp tuple. button_list is None if no button was pressed (i.e. a timeout occurred).
-
-- Type: tuple
-
-</div>
-
-[srbox.get_button_press]: #srbox-get_button_press
-[get_button_press]: #srbox-get_button_press
-
-<div class="FunctionDoc YAMLDoc" id="srbox-send" markdown="1">
-
-## [function __srbox\.send__\(ch\)](#function-__srboxsend__ch) {#function-__srboxsend__ch}
+## [function __AMS\.SendCodedMarker__\(int\)](#function-__srboxsend__ch) {#function-__srboxsend__ch}
 
 Sends a single character to the SR Box. Send '`' to turn off all lights, 'a' for light 1 on, 'b' for light 2 on,'c' for lights 1 and 2 on etc.
 
 __Arguments:__
 
-- `ch` -- The character to send.
-	- Type: str
-
-</div>
+- `int` -- The integer to send.
+	- Type: str(?)
 
 [srbox.send]: #srbox-send
 [send]: #srbox-send
 
-<div class="FunctionDoc YAMLDoc" id="srbox-start" markdown="1">
 
-## [function __srbox\.start__\(\)](#function-__srboxstart__) {#function-__srboxstart__}
-
-Turns on sending mode, so that the SR Box starts to send output. The SR Box must be in sending mode when you call [srbox.get_button_press].
-
-</div>
-
-[srbox.start]: #srbox-start
-[start]: #srbox-start
-
-<div class="FunctionDoc YAMLDoc" id="srbox-stop" markdown="1">
-
-## [function __srbox\.stop__\(\)](#function-__srboxstop__) {#function-__srboxstop__}
-
-Turns off sending mode, so that the SR Box stops giving output.
-
-</div>
-
-[srbox.stop]: #srbox-stop
-[stop]: #srbox-stop
-
-</div>
-
-[srbox]: #srbox
-
-
-[function __srbox\.\_\_init\_\___\(experiment, dev=None\)]: #function-__srbox__init____experiment-devnone
-[function __srbox\.close__\(\)]: #function-__srboxclose__
-[function __srbox\.get\_button\_press__\(allowed\_buttons=None, timeout=None, require\_state\_change=False\)]: #function-__srboxget_button_press__allowed_buttonsnone-timeoutnone-require_state_changefalse
-[function __srbox\.send__\(ch\)]: #function-__srboxsend__ch
-[function __srbox\.start__\(\)]: #function-__srboxstart__
-[function __srbox\.stop__\(\)]: #function-__srboxstop__
-
-
-
-
-
+[function __AMS\.SendCodedMarker__\(int\)]: #function-__AMSSendCodedMarker__int
 
 
 
