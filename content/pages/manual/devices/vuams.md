@@ -56,7 +56,7 @@ A VU-AMS device see:
 
 ## Using the vu-ams from Python inline code
 
-# class __AMS__
+## class __AMS__
 
 If you insert the vu-ams plugin at the start of your experiment, an
 instance of `AMS` automatically becomes part of the `var`
@@ -76,7 +76,7 @@ except:
 	print 'Failed sending marker!'
 ~~~
 
-## [function __AMS\.SendCodedMarker__\(int\)](#function-__AMSSendCodedMarker__int) {#function-__AMSSendCodedMarker__int}
+### [function __AMS\.SendCodedMarker__\(int\)](#function-__AMSSendCodedMarker__int) {#function-__AMSSendCodedMarker__int}
 
 Sends a coded marker to the VU-AMS device.
 
@@ -88,10 +88,6 @@ __Arguments:__
 
 [function __AMS\.SendCodedMarker__\(int\)]: #function-__AMSSendCodedMarker__int
 
-
-## Recommendations
-
-- ???
 
 ## Troubleshooting
 
