@@ -13,10 +13,10 @@ Markers can be sent with the `vu-ams` plugin which currently works under Windows
 
 The plugin has three input boxes:
 
-- The device name can be autodetect or can be specified manually.
-- The send marker value ranges between 0-65535 and specifies the marker number to send.
-- The use number from title checkbox allows you to use a number from the item title to send.
-- The use without VU-AMS device allows you to run your experiment without a VU-AMS connected and recording.
+- The *Device name* can be autodetect or can be specified manually.
+- The *Send marker* value ranges between 0-65535 and specifies the marker number to send.
+- The *Use number from title* checkbox allows you to use a number from the item title to send.
+- The *Use without VU-AMS device* checkbox allows you to run your experiment without a VU-AMS connected and recording.
 
 You can download the plugin from here:
 
@@ -27,7 +27,7 @@ figure:
  id: FigScreenshot
  source: plugin-screenshot.png
  caption: |
-  A screenshot of the `parallel_port_trigger` plugin.
+  A screenshot of the `vu-ams` plugin.
 --%
 
 ## Using `dportio.dll` in a Python inline Script (Windows only)
