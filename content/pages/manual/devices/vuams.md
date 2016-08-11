@@ -70,22 +70,19 @@ __Example:__
 
 ~~~ .python
 try:
-	var.AMS.SendBeepingMarker()
+	var.AMS.SendCodedMarker(555)
 except:
 	print 'Failed sending marker!'
 ~~~
 
-## [function __AMS\.SendCodedMarker__\(int\)](#function-__srboxsend__ch) {#function-__srboxsend__ch}
+## [function __AMS\.SendCodedMarker__\(int\)](#function-__AMSSendCodedMarker__int) {#function-__AMSSendCodedMarker__int}
 
-Sends a single character to the SR Box. Send '`' to turn off all lights, 'a' for light 1 on, 'b' for light 2 on,'c' for lights 1 and 2 on etc.
+Sends a coded marker to the VU-AMS device.
 
 __Arguments:__
 
 - `int` -- The integer to send.
-	- Type: str(?)
-
-[srbox.send]: #srbox-send
-[send]: #srbox-send
+	- Type: int
 
 
 [function __AMS\.SendCodedMarker__\(int\)]: #function-__AMSSendCodedMarker__int
