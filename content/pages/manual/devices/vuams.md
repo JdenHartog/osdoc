@@ -89,45 +89,6 @@ __Arguments:__
 [function __AMS\.SendCodedMarker__\(int\)]: #function-__AMSSendCodedMarker__int
 
 
-
-
-
-
-
-
-
-
-
-## Using `dportio.dll` in a Python inline Script (Windows only)
-
-Instead of using the `parallel_port_trigger` plugin, it is also possible to send triggers with `dlportio.dll` through a Python inline script. This approach is Windows only. To do so, first add an INLINE_SCRIPT to the start of the experiment with the following code in the prepare phase:
-
-~~~ .python
-try:
-	from ctypes import windll
-	global io
-	io = windll.dlportio # requires dlportio.dll !!!
-except:
-	print 'The parallel port couldn\'t be opened'
-~~~
-
-This will load `dlportio.dll` as a global object called `io`. Please note that failure will not crash the experiment, so make sure to check the debug window for error messages!
-
-Now use the following code in an INLINE_SCRIPT anywhere in the experiment to send a trigger:
-
-~~~ .python
-global io
-trigger = 1
-port = 0x378
-try:
-	io.DlPortWritePortUchar(port, trigger)
-except:
-	print 'Failed to send trigger!'
-~~~
-
-Note that this sends trigger 1 to port 0x378 (=888). Change these values according to your set-up.
-
-
 ## Recommendations
 
 - ???
