@@ -30,7 +30,7 @@ The plugin has three input boxes:
 
 You can download the plugin from here:
 
-- <https://github.com/JdenHartog/vu_ams>
+- <https://github.com/JdenHartog/vu_ams/releases>
 
 %--
 figure:
