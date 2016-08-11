@@ -61,6 +61,7 @@ A VU-AMS device see:
 If you insert the vu-ams plugin at the start of your experiment, an
 instance of `AMS` automatically becomes part of the `var`
 object and can be accessed within an inline_script item as `var.AMS
+Technically you will be calling `AmsSerial.dll` functions directly.
 
 __Function list:__
 
