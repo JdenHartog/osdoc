@@ -4,6 +4,13 @@ The VU University Ambulatory Monitoring System (VU-AMS) is a device that can be 
 
 - <http://www.vu-ams.nl/>
 
+%--
+figure:
+ id: FigVuamsDevice
+ source: VU-AMS.png
+ caption: |
+  The VU-AMS device.
+--%
 
 [TOC]
 
