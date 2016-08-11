@@ -9,7 +9,7 @@ The VU University Ambulatory Monitoring System (VU-AMS) is a device that can be 
 Parallel_port_trigger is a third-party plugin.
 {: .page-notification}
 
-Markers can be sent with the `vu-ams` plugin which currently works under Windows only.
+Markers can be sent with the `vu-ams` plugin which currently works under **Windows only**.
 
 The plugin has three input boxes:
 
@@ -29,6 +29,27 @@ figure:
  caption: |
   A screenshot of the `vu-ams` plugin.
 --%
+
+## Setting the device name
+
+By default, the plugin tries to autodetect your SR Box. If this works, you don't have to change it. If your experiment freezes, OpenSesame has chosen the wrong serial port and you must enter the device name manually. Under Windows, the device is probably called something like
+
+	COM4
+
+Under Linux the device is probably called something like
+
+	/dev/tty0
+
+## Requirements
+
+An SR Box or compatible button box. Not all button boxes are compatible, see:
+
+- %link:buttonbox%
+
+## Using the SR Box from Python inline code
+
+%-- include: include/api/srbox.md --%
+
 
 ## Using `dportio.dll` in a Python inline Script (Windows only)
 
