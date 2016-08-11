@@ -69,14 +69,10 @@ __Function list:__
 __Example:__
 
 ~~~ .python
-t0 = clock.time()
-srbox.start()
-button, t1 = srbox.get_button_press(allowed_buttons=[1,2],
-        require_state_change=True)
-if button == 1:
-        response_time = t1 - t0
-        print('Button 1 was pressed in %d ms!' % response_time)
-srbox.stop()
+try:
+	var.AMS.SendBeepingMarker()
+except:
+	print 'Failed sending marker!'
 ~~~
 
 ## [function __AMS\.SendCodedMarker__\(int\)](#function-__srboxsend__ch) {#function-__srboxsend__ch}
